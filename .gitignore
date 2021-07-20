@@ -1,0 +1,21 @@
+*.ipynb
+
+*.DS_Store
+
+data/*
+!data/.gitkeep
+
+data/Object Detection Results/*
+!data/Object Detection Results/.gitkeep
+
+data/Original Videos/*
+!data/Original Videos/.gitkeep
+
+# To encourage best practices, we're ignoring some common data/output types that are being dumped into git repo's
+*.png
+*.jpg
+*.mp4
+*.ipynb
+*.csv
+*.tsv
+*.pdf
