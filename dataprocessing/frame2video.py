@@ -10,12 +10,12 @@ from data.config import DATA_PATH
 from data_utils import frame2video_convertor
 
 
-if __name__ == "__main__":
-    logger.info(f"combining the frames to video and save the results")
+if __name__ == '__main__':
+    logger.info(f'combining the frames to video and save the results')
     a = argparse.ArgumentParser()
-    a.add_argument("--pathIn", help="path to the image folder")
+    a.add_argument('--pathIn', help='path to the image folder')
     a.add_argument('--pathOut', help='folder for saving the output video')
-    a.add_argument("--fps", help="frame per second")
+    a.add_argument('--fps', help='frame per second')
     args = a.parse_args()
     args.pathIn = Path(DATA_PATH / 'Object Detection Results')
     args.pathOut = Path(DATA_PATH / 'Reconstructed Videos')
