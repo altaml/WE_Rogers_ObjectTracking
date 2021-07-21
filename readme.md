@@ -20,6 +20,8 @@ There are 3 hockey video game provided by rogers which we are going to use 2 of 
 * Either open a terminal and clone the repo in your computer or download the zip of the project and unzip the folder.
 ```git clone https://github.com/altaml/WE_Rogers_ObjectTracking.git```
 
+* install the requirement libraries by: ```pip install -r requirements.txt```
+
 * Put all the Rogerst video data in this folder: ``` data/Original Videos ```
 * For converting video to frames, first go to the cloned repository root and then run the following command in terminal or run the video2frame.py in any IDE:
 ```python dataprocessing/video2frame.py ```
