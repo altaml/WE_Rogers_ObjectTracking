@@ -4,6 +4,7 @@
 
 data/*
 !data/.gitkeep
+!*.py
 
 data/Object Detection Results/*
 !data/Object Detection Results/.gitkeep
