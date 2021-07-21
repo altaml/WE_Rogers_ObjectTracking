@@ -37,7 +37,7 @@ def videos2frames_frame_number(inputdir: Path, outputdir: Path, frame_number: in
             if not success:
                 break
             if count % frame_number == 0:
-                cv2.imwrite(str(current_output / "frame{:d}.jpg".format(count)), image)
+                cv2.imwrite(str(current_output / 'frame{:d}.jpg'.format(count)), image)
                 save_count += 1
                 logger.info(f'frame {count} is saved!')
             count += 1
