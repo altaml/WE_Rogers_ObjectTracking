@@ -14,7 +14,7 @@ if __name__ == "__main__":
     logger.info(f"combining the frames to video and save the results")
     a = argparse.ArgumentParser()
     a.add_argument("--pathIn", help="path to the image folder")
-    a.add_argument("--pathOut", help="folder for saving the output vide.")
+    a.add_argument('--pathOut', help='folder for saving the output video')
     a.add_argument("--fps", help="frame per second")
     args = a.parse_args()
     args.pathIn = Path(DATA_PATH / 'Object Detection Results')
@@ -24,5 +24,4 @@ if __name__ == "__main__":
         if folder.is_dir():
             logger.info(f'{folder}')
             frame2video_convertor(folder, args.pathOut, args.fps)
-
 
