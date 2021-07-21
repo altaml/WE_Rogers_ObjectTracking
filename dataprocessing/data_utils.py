@@ -10,7 +10,7 @@ def videos2frames_frame_number(inputdir: Path, outputdir: Path, frame_number: in
     """
     convert video to frames based on the requested number of frames.
     """
-    assert inputdir.is_dir()
+    assert inputdir.is_dir(), f"{str(inputdir)} does not exist!"
     if not outputdir.is_dir():
         outputdir.mkdir(parents=True, exist_ok=False)
 
@@ -53,7 +53,7 @@ def frame2video_convertor(pathIn: Path, pathOut: Path, fps: int):
     files.sort()
     frame_array = []
 
-    assert pathIn.is_dir()
+    assert pathIn.is_dir(), f"{str(pathIn)} does not exist!"
     if not pathOut.is_dir():
         pathOut.mkdir(parents=True, exist_ok=False)
     final_video_name = pathOut / Path('rec_' + pathIn.name + '.mp4')
