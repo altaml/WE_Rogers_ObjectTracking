@@ -25,8 +25,8 @@ There are 3 hockey video game provided by rogers which we are going to use 2 of 
 
 * Put all the Rogerst video data in this folder: ``` data/Original Videos ```
 
-* For converting video to frames, first go to the cloned repository root and then run the following command in terminal or you can run the video2frame.py in any IDE such as jupyter notebook:
-```Python dataprocessing/video2frame.py ```. This will create the frames of the videos in individual folders in this path: ``` data/Original Frames ```.
+* For converting video to frames, go to the dataprocessing folder (```cd dataprocessing```) and then run the following command in terminal:
+```Python video2frame.py ```. This will create the frames of the videos in the individual folders in this path: ``` data/Original Frames ```.
 
-* After getting the object detection results, please put the folder of frames in ```Object Detection Results``` folder. Then you can reconstruct the video back by running the following command in the root of the repo:
-```Python dataprocessing/frame2video.py```. This will create  a new folder called ```Reconstructed Videos``` and put the reconstructed video there.
+* After getting the object detection results, please put the folder of frames in ```Object Detection Results``` folder. Then you can reconstruct the video by running the following command, in the dataprocessing folder (```cd dataprocessing```). 
+```Python frame2video.py```. This will create  a new folder called ```Reconstructed Videos``` which will have the reconstructed video there.
